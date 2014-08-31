@@ -1,0 +1,84 @@
+<section id="content">
+
+
+<div class="wrap-content affangrid">
+
+		<div class="row block">
+
+        <div class="col-full">
+
+				<div class="block01">
+                <br />
+				<br />
+				<a href="<? echo site_url('candidate/index');?>" class="normallink">Back to My Page</a>
+                <br />
+				<br />
+                 <div class="block-padding">
+                            <h1>Change Your Name:</h1><br />
+
+                       
+                        </div>
+
+                    </div>
+				</div>
+
+			</div>
+
+            </div>
+</div>
+<div class="wrap-content affangrid">
+
+		<div class="row block">
+
+        <div class="col-full">
+
+				<div class="block01">
+
+
+				  <div style="width:300px; float:left;">
+
+                        		
+<?
+$attributes = array('id' => 'myform');
+?>
+<?= form_open_multipart('registration/updateaccountName',$attributes);?>
+
+
+
+                        <input name="name" type="text" class="input61" id="name" placeholder="Name" value="<?=$name?>" />
+
+                        <?=form_error('name');?>
+
+                    	<br /><br />
+
+
+                       <a href="#" onclick="document.getElementById('myform').submit();" class="button2">&nbsp;Update&nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="<? echo site_url('registration/updateaccount');?>" class="button2ba">Cancel</a>
+
+                		<?=form_close()?>
+
+                    </div>
+
+                        <div style="width:100px; float:left;">
+
+                        	&nbsp;<img src="<?=base_url();?>images/midline.jpg">
+
+                        </div>
+
+                        <div style="width:300px; float:left;">
+                        <span style="color:#900; font-size:16px;">What's in a name...</span><br />
+
+We strongly encourage you to use your or your organization’s real name. Made-up name may destroy the most basic credibility of a campaign.
+
+                        </div>
+
+					
+
+				</div>
+
+			</div>
+
+            </div>
+
+</div>
+
+</section>
